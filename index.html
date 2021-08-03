@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Social Media Dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./normalise.css" type="text/css" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" /> 
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="title-container">
+        <h1 class="title">Social Media Dashboard</h1>
+        <h3 class="total-followers">Total Followers: 23,004</h3>
+      </div>
+      <hr class="hr hidden">
+      <div class="theme-switcher-container">
+        <label for="dark-mode">Dark Mode</label>
+        <input type="checkbox" class="theme-switcher" id="dark-mode">
+      </div>
+    </header>
+    
+    <main class="main">
+      <div class="grid-container-large grid-container">
+        <div class="grid-item">
+          <section>
+            <img src="./images/icon-facebook.svg" alt="Blue coloured Facebook logo." class="social-media">
+            <strong class="name">@nathanf</strong>
+            <h1 class="counter-large">1987</h1>
+            <p class="followers">Followers</p>
+            <p class="update update-green">12 Today</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <img src="./images/icon-twitter.svg" alt="Blue coloured Twitter logo." class="social-media">
+            <strong class="name">@nathanf</strong>
+            <h1 class="counter-large">1044</h1>
+            <p class="followers">Followers</p>
+            <p class="update update-green">99 Today</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <img src="./images/icon-instagram.svg" alt="Red and yellow coloured Instagram logo." class="social-media">
+            <strong class="name">@realnathanf</strong>
+            <h1 class="counter-large">11k</h1>
+            <p class="followers">Followers</p>
+            <p class="update update-green">1099 Today</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <img src="./images/icon-youtube.svg" alt="Red and white coloured Youtube logo." class="social-media">
+            <strong class="name">Nathan F.</strong>
+            <h1 class="counter-large">8239</h1>
+            <p class="followers">Subscribers</p>
+            <p class="update update-red">144 Today</p>
+          </section>
+        </div>
+      </div>
+
+      <h2 class="overview-today">Overview - Today</h2>
+
+      <!-- May need two containers within items - space-between * 2 -->
+
+      <div class="grid-container-small grid-container">
+        <div class="grid-item">
+          <section>
+            <strong class="views-likes-retweets">Page views</strong>
+            <img src="./images/icon-facebook.svg" alt="Blue coloured Facebook logo." class="social-media">
+            <p class="counter-small">87</p>
+            <p class="update update-green">3%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Likes</strong>
+            <img src="./images/icon-facebook.svg" alt="Blue coloured Facebook logo." class="social-media">
+            <p class="counter-small">52</p>
+            <p class="update update-red">2%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Likes</strong>
+            <img src="./images/icon-instagram.svg" alt="Red and yellow coloured Instagram logo." class="social-media">
+            <p class="counter-small">5462</p>
+            <p class="update update-green">2257%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Profile Views</strong>
+            <img src="./images/icon-instagram.svg" alt="Red and yellow coloured Instagram logo." class="social-media">
+            <p class="counter-small">52k</p>
+            <p class="update update-green">1375%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Retweets</strong>
+            <img src="./images/icon-twitter.svg" alt="Blue coloured Twitter logo." class="social-media">
+            <p class="counter-small">117</p>
+            <p class="update update-green">303%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Likes</strong>
+            <img src="./images/icon-twitter.svg" alt="Blue coloured Twitter logo." class="social-media">
+            <p class="counter-small">507</p>
+            <p class="update update-green">553%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Likes</strong>
+            <img src="./images/icon-youtube.svg" alt="Red and white coloured Youtube logo." class="social-media">
+            <p class="counter-small">107</p>
+            <p class="update update-red">19%</p>
+          </section>
+        </div>
+        <div class="grid-item">
+          <section>
+            <strong class="views-like-retweets">Total Views</strong>
+            <img src="./images/icon-youtube.svg" alt="Red and white coloured Youtube logo." class="social-media">
+            <p class="counter-small">1407</p>
+            <p class="update update-red">12%</p>
+          </section>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
