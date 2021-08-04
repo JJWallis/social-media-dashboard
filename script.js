@@ -6,6 +6,7 @@ const whiteTxt = document.querySelectorAll('.white-txt')
 const blueTxt = document.querySelectorAll('.blue-txt')
 const gridItems = document.querySelectorAll('.grid-item')
 const instagramGrid = document.querySelector('.hero__grid-item-inst')
+themeSwitch.checked = false
 
 themeSwitch.addEventListener('change', e => {
   if (e.target.matches('#dark-mode')) {

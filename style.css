@@ -313,6 +313,7 @@ input:checked + .slider:before {
     hsl(37, 97%, 70%),
     hsl(329, 70%, 58%)
   );
+}
 
 /* =====================
     MEDIA QUERIES
