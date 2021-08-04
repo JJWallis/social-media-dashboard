@@ -29,20 +29,17 @@
 
 #### Light Theme
 
-- White (BG): hsl(0, 0%, 100%)
-- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
 - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
 - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
 - Very Dark Blue (Text): hsl(230, 17%, 14%) 
 */
 
 /* 
-
 TO DO:
 
-Fluid grid for both grid containers
+Border radius for background gradient
+Dark mode theme toggle 
 Centered on page? 
-
 */
 
 *,
@@ -51,14 +48,62 @@ Centered on page?
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px/1.5 "Inter", sans-serif;
+:root {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(225, 100%, 98%) 18%,
+    hsl(0, 0%, 100%) 18%
+  );
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 0.9em/1.5;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  outline: 1px solid;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.02ch;
+}
+
+.total-followers {
+  margin-top: 0.5rem;
+  color: hsl(228, 12%, 44%);
+  font-size: 0.9rem;
+  letter-spacing: 0.1ch;
+}
+
+.hr {
+  height: 1px;
+  margin: 1.5rem 0 1.3rem;
+  border: 0;
+  background: #333;
+}
+
+.header__theme-switcher-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-dark-mode {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
 /* ===================
       ELEMENT STATE 
-======================*/
-
-.hidden {
-  display: none;
-}
+====================== */
