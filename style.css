@@ -282,6 +282,33 @@ input:checked + .slider:before {
   transition: 400ms;
 }
 
+.hero__grid-item-inst:hover {
+  background: linear-gradient(
+    to top,
+    #dbdde5 97%,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+
+.hero__grid-item-inst-dark:hover {
+  background: linear-gradient(
+    to top,
+    #333a56 97%,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+
+.hero__grid-item-inst-dark {
+  background: linear-gradient(
+    to top,
+    hsl(228, 28%, 20%) 97%,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+
 .grid-item-dark:hover {
   background-color: #333a56;
 }
@@ -304,15 +331,6 @@ input:checked + .slider:before {
 
 .desat-blue {
   color: hsl(228, 34%, 66%);
-}
-
-.hero__grid-item-inst-dark {
-  background: linear-gradient(
-    to top,
-    hsl(228, 28%, 20%) 97%,
-    hsl(37, 97%, 70%),
-    hsl(329, 70%, 58%)
-  );
 }
 
 /* =====================
