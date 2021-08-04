@@ -195,6 +195,26 @@ body {
   left: -20%;
 }
 
+.title-overview {
+  margin: 3rem 0 2rem 0;
+  color: hsl(228, 12%, 44%);
+  letter-spacing: 0.1ch;
+}
+
+.overview__grid-item {
+  padding: 2rem;
+}
+
+.overview__grid-item-flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview__grid-item-flex-sb:first-child {
+  margin-bottom: 1.5rem;
+}
+
 /* ==============
     Theme Toggle 
 ================= */
