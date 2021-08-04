@@ -1,9 +1,4 @@
 /* 
-- Lime Green: hsl(163, 72%, 41%)
-- Bright Red: hsl(356, 69%, 56%)
-
-- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
-
 #### Dark Theme
 
 - Very Dark Blue (BG): hsl(230, 17%, 14%)
@@ -107,7 +102,7 @@ body {
 }
 
 .grid-item {
-  outline: 1px solid;
+  /* outline: 1px solid; */
   background-color: hsl(227, 47%, 96%);
   border-radius: 5px;
 }
@@ -120,7 +115,9 @@ body {
 }
 
 .hero__grid-item section {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__grid-item-fb {
@@ -134,7 +131,7 @@ body {
 .hero__grid-item-inst {
   background: linear-gradient(
     to top,
-    hsl(227, 47%, 96%) 95%,
+    hsl(227, 47%, 96%) 97%,
     hsl(37, 97%, 70%),
     hsl(329, 70%, 58%)
   );
@@ -146,11 +143,56 @@ body {
 
 .hero__name-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
   margin-left: 0.5rem;
   color: hsl(228, 12%, 44%);
+  font-size: 0.8rem;
+}
+
+.counter-large {
+  font-size: 3.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.counter-large-txt {
+  margin: 0.4rem 0 1rem;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+}
+
+.update {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.update-green {
+  color: hsl(163, 72%, 41%);
+  position: relative;
+}
+
+.update-green::before {
+  content: url("./images/icon-up.svg");
+  position: absolute;
+  bottom: 15%;
+  left: -20%;
+}
+
+.update-red {
+  color: hsl(356, 69%, 56%);
+  position: relative;
+}
+
+.update-red::before {
+  content: url("./images/icon-down.svg");
+  position: absolute;
+  bottom: 15%;
+  left: -20%;
 }
 
 /* ==============
