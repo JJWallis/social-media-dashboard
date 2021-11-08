@@ -1,6 +1,6 @@
-# Frontend Mentor - ‘…’ solution
+# Frontend Mentor - Social media dashboard with theme switcher solution
 
-This is a solution to the **‘…’** challenge on Frontend Mentor(link)
+This is a solution to the [Social media dashboard with theme switcher challenge](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H) on Frontend Mentor
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the **‘…’** challenge on Frontend Mentor(link)
    -  [Continued development](#continued-development)
    -  [Useful resources](#useful-resources)
 -  [Author](#author)
--  [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -22,9 +21,13 @@ This is a solution to the **‘…’** challenge on Frontend Mentor(link)
 
 Your users should be able to:
 
+-  View the optimal layout for the site depending on their device's screen size
+-  See hover states for all interactive elements on the page
+-  Toggle color theme to their preference
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot.png)
 
 ### Links
 
@@ -73,10 +76,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 ###### TODO
 
