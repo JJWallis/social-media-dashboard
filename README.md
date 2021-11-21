@@ -53,28 +53,9 @@ Your users should be able to:
 ```
 
 ```css
-:root {
-   background-image: linear-gradient(
-      to bottom,
-      hsl(225, 100%, 98%) 270px,
-      hsl(0, 0%, 100%) 270px
-   );
-}
-
-/* 1st attempt at bg-color change */
-
-.bg-grey {
-   position: absolute;
-   z-index: -1;
-}
-
-/* final solution */
-
 input:checked + .slider {
    background-image: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
-
-/* theme toggle  */
 ```
 
 ```js
@@ -84,6 +65,49 @@ themeSwitch.addEventListener('change', (e) => {
       ...
    }
 ```
+
+Theme toggle - 1st use in project | wrapping in parent label (clickable link) + pseudo-els to create slider | into to translating property in CSS (going back + forth due to checked state being true or false - not flying off side) | using that logic nicely in JS to change colours
+
+```css
+:root {
+   background-image: linear-gradient(
+      to bottom,
+      hsl(225, 100%, 98%) 270px,
+      hsl(0, 0%, 100%) 270px
+   );
+}
+
+.bg-grey {
+   position: absolute;
+   z-index: -1;
+}
+/* final solution */
+```
+
+Bg img on top-half of body - 1st attempt gradient which changed at that point | final solution - negative z-index positioned div
+
+```css
+.grid-container-hero,
+.grid-container-overview {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+}
+```
+
+Responsive Grid - pseduo-els to fill appropaite grid cells when allowing to be repsonsive with auto-fill/fit | future - grid-areas + template controlled layout = column - two col - 3+ (no need) | pseudo els fill 1st + last grid cell on container - power of grid
+
+```css
+.grid-item {
+   transition: 400ms;
+}
+
+.grid-item:hover {
+   transform: scale(1.1);
+}
+```
+
+scale() - 1st use | transition opacity on hover - nice effect (where to place transition - not on pseudo-class)
 
 ### Continued development
 
@@ -99,21 +123,3 @@ Beyond traditional 'for' loops - diff types (for...of) - more readable
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-###### TODO
-
-HTML:
-
-Building header content to dynamically fit mobile + wider layout (planning it out - rendering hr hidden)
-
-CSS:
-
-Bg img on top-half of body - 1st attempt gradient which changed at that point | final solution - negative z-index positioned div
-
-Theme toggle - 1st use in project | wrapping in parent label (clickable link) + pseudo-els to create slider | into to translating property in CSS (going back + forth due to checked state being true or false - not flying off side) | using that logic nicely in JS to change colours
-
-Responsive Grid - pseduo-els to fill appropaite grid cells when allowing to be repsonsive with auto-fill/fit | future - grid-areas + template controlled layout = column - two col - 3+ (no need) | pseudo els fill 1st + last grid cell on container - power of grid
-
-scale() - 1st use | transition opacity on hover - nice effect
-
-Pseudo els for arrows next to numbers - fluid horizontal values vs fixed vertical (understanding why that's common)
