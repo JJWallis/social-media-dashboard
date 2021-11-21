@@ -109,21 +109,17 @@ Another great challenge this project provided was the responsive behaviour of th
 }
 ```
 
-Finally,
-
-scale() - 1st use | transition opacity on hover - nice effect (where to place transition - not on pseudo-class)
+Finally, to add some interactivity to the project, I decided to use a `transform: scale()` whilst playing with appropiate transition amounts at the same time. I learnt how not to apply the transition on the pseudo-class but the base element instead, so that it occurs both when the pseudo-class both applies and stops applying. For future projects I plan to create more performant transitions by not transitioning every property on the element, but specifying what properties to target.
 
 ### Continued development
 
-More accessible theme toggles + more functional implementations
+I would like to continue learning about different ways to create theme toggles accross all languages, but with a particular focus on accessibility.
 
-future - grid-areas + template controlled layout = column - two col - 3+ (no need)
-
-Beyond traditional 'for' loops - diff types (for...of) - more readable
+Additionally, further practice at creating more responsive grid containers by using an explicitly defined layout at different viewports would be welcome.
 
 ### Useful resources
 
--  [Toggle Switch - Codepen](https://codepen.io/haleonearth/pen/aJMevP) - This helped me tremendously with the styles and logic of a theme switcher toggle, especially since I hadn't created one before this project.
+-  [Toggle Switch - Codepen](https://codepen.io/haleonearth/pen/aJMevP) - This helped me tremendously with the styles and logic of the theme switcher toggle, especially since I hadn't created one before this project.
 
 ## Author
 
