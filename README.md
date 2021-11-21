@@ -117,7 +117,3 @@ Responsive Grid - pseduo-els to fill appropaite grid cells when allowing to be r
 scale() - 1st use | transition opacity on hover - nice effect
 
 Pseudo els for arrows next to numbers - fluid horizontal values vs fixed vertical (understanding why that's common)
-
-Testing, testing, testing
-
-Testing, testing, testing
