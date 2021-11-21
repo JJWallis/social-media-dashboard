@@ -66,7 +66,9 @@ themeSwitch.addEventListener('change', (e) => {
    }
 ```
 
-Theme toggle - 1st use in project | wrapping in parent label (clickable link) + pseudo-els to create slider | into to translating property in CSS (going back + forth due to checked state being true or false - not flying off side) | using that logic nicely in JS to change colours
+One primary reason I chose to attempt this project was because it included a theme toggle that I had never attempted to build before. I learnt how to semantically create the markup for it via a parent `<label>` which linked with the checkbox that it housed, whilst also containing a span with semantic meaning to create the slider shape. Applying padding to the label would correspondingly increase the clickable area that would target the theme change, which was a very similar concept to increasing the padding on a link for mobile devices as an example.
+
+I was also introduced to the translate property in order to achieve the slider's movement when the checkbox state changed. At first I thought the slider would keep moving in the desired direction repeatedly, but because of that class only being toggled on when the checkbox was in a 'checked' state, it would move back if that state changed to falsy. This behaviour was easily targettable in Javascript to toggle a different class on the root `<HTML>`, which would then use a different set of pre-declared colours for the site.
 
 ```css
 :root {
@@ -80,11 +82,11 @@ Theme toggle - 1st use in project | wrapping in parent label (clickable link) + 
 .bg-grey {
    position: absolute;
    z-index: -1;
+   border-radius: 5px;
 }
-/* final solution */
 ```
 
-Bg img on top-half of body - 1st attempt gradient which changed at that point | final solution - negative z-index positioned div
+The light-grey background colour change provided a nice challenge as well, since I had never encountered this design before. My first solution was to apply a linear-gradient to the `<html>` that changed into the light-grey at the desired vertical point. However, the original design contained a border-radius applied to both bottom corners, so I changed my solution to a negatively z-indexed & positioned `<div>` behind the rest of the content.
 
 ```css
 .grid-container-hero,
@@ -95,7 +97,7 @@ Bg img on top-half of body - 1st attempt gradient which changed at that point | 
 }
 ```
 
-Responsive Grid - pseduo-els to fill appropaite grid cells when allowing to be repsonsive with auto-fill/fit | future - grid-areas + template controlled layout = column - two col - 3+ (no need) | pseudo els fill 1st + last grid cell on container - power of grid
+Another great challenge this project provided was the responsive behaviour of the primary grid container, which by default created blank grid-items at certain viewport sizes to achieve that responsive behaviour. In order to accommodate for this as best as possible, I decided to add extra/empty grid-items, whose visibility were toggled at those viewport sizes to create an even looking grid. Once I learn more about design, I would like to experiment more with those empty grid-cells so they don't quite look as naked as they currently do.
 
 ```css
 .grid-item {
@@ -107,11 +109,15 @@ Responsive Grid - pseduo-els to fill appropaite grid cells when allowing to be r
 }
 ```
 
+Finally,
+
 scale() - 1st use | transition opacity on hover - nice effect (where to place transition - not on pseudo-class)
 
 ### Continued development
 
 More accessible theme toggles + more functional implementations
+
+future - grid-areas + template controlled layout = column - two col - 3+ (no need)
 
 Beyond traditional 'for' loops - diff types (for...of) - more readable
 
