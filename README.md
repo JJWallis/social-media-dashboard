@@ -38,9 +38,9 @@ Your users should be able to:
 ### Built with
 
 -  Semantic HTML5 markup
--  Flexbox
--  CSS Grid
 -  Mobile-first workflow
+-  CSS Grid
+-  Flexbox
 -  Vanilla JS
 
 ### What I learned
@@ -113,15 +113,15 @@ Finally, to add some interactivity to the project, I decided to use a `transform
 
 ### Continued development
 
-I would like to continue learning about different ways to create theme toggles accross all languages, but with a particular focus on accessibility.
+I would like to continue learning about the different ways to create theme toggles accross all languages, but with a greater focus on accessibility.
 
 Additionally, further practice at creating more responsive grid containers by using an explicitly defined layout at different viewports would be something great to practice as well.
 
 ### Useful resources
 
--  [Toggle Switch - Codepen](https://codepen.io/haleonearth/pen/aJMevP) - This helped me tremendously with the styles and logic of the theme switcher toggle, especially since I hadn't created one before this project.
+-  [Toggle Switch - Codepen](https://codepen.io/haleonearth/pen/aJMevP) - This helped me tremendously with the styles and logic of the theme switcher toggle.
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
--  Linkedin - [Joshua Jameson-Wallis]()
+-  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
