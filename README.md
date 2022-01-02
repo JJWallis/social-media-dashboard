@@ -66,9 +66,9 @@ themeSwitch.addEventListener('change', (e) => {
    }
 ```
 
-One primary reason I chose to attempt this project was because it included a theme toggle that I had never attempted to build before. I learnt how to semantically create the markup for it via a parent `<label>` which linked with the checkbox that it housed, whilst also containing a `<span>` without semantic meaning to create the slider shape. Applying padding to the label would correspondingly increase the clickable area that would target the theme change, which was a very similar concept to increasing the padding on a link for mobile devices (a technique I was very familiar with at the time).
+One primary reason I chose to attempt this project was because it included a theme toggle that I had never attempted to build before. I learnt how to semantically create the markup for it via a parent `<label>` which linked with the checkbox that it housed, whilst also containing a `<span>` with no semantic meaning to create the slider shape. Applying padding to the label would correspondingly increase the clickable area that would target the theme change, which was very similar behaviour to increasing the padding on a link for mobile devices (a technique I was familiar with at the time).
 
-I was also introduced to the `translate` property in order to achieve the slider's movement when the checkbox state changed. At first, I thought the slider would keep moving in the desired direction repeatedly, but because of the dynamic class only being toggled on when the checkbox was in a 'checked' state, it would thus move back if that state changed to falsy. This behaviour was easily targettable in JavaScript to toggle a different class on the root `<HTML>`, which would then use a different set of pre-declared colours for the site.
+I was also introduced to the `translate` property in order to re-create the slider's movement when the checkbox state changed. At first I thought the slider would keep moving in the desired direction repeatedly, but because the checkbox can only be in either a 'checked' or 'non-checked' state, it would only move back and forth on each change.
 
 ```css
 :root {
