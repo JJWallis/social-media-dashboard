@@ -66,9 +66,9 @@ themeSwitch.addEventListener('change', (e) => {
    }
 ```
 
-One primary reason I chose to attempt this project was because it included a theme toggle that I had never attempted to build before. I learnt how to semantically create the markup for it via a parent `<label>` which linked with the checkbox that it housed, whilst also containing a `<span>` with no semantic meaning to create the slider shape. Applying padding to the label would correspondingly increase the clickable area that would target the theme change, which was very similar behaviour to increasing the padding on a link for mobile devices (a technique I was familiar with at the time).
+I learnt how to semantically create the markup for a theme toggle by applying a parent `<label>` which linked to the checkbox that it housed, whilst also containing a `<span>` with no semantic meaning to create the slider shape. Applying padding to the label would correspondingly increase the clickable area that would target the theme change, which was very similar behaviour to increasing the padding on a link for mobile devices.
 
-I was also introduced to the `translate` property in order to re-create the slider's movement when the checkbox state changed. At first I thought the slider would keep moving in the desired direction repeatedly, but because the checkbox can only be in either a 'checked' or 'non-checked' state, it would only move back and forth on each change.
+I was also introduced to the `translate` property in order to re-create the slider's movement when the checkbox state changed. At first I thought the slider would keep moving in the desired direction repeatedly, but because the checkbox can only be in either a 'checked' or 'non-checked' state it would only move back and forth on each change.
 
 ```css
 :root {
