@@ -86,7 +86,7 @@ I was also introduced to the `translate` property in order to re-create the slid
 }
 ```
 
-The light-grey body background colour change provided a nice challenge as well, since I had never encountered this design feature before. My first solution was to apply a linear-gradient to the `<html>` tag, that transitioned into the light-grey at the desired vertical point. However, the original design contained a border-radius applied to both bottom corners, so I changed my solution to a negatively positioned `<div>` behind the rest of the content.
+My first solution to the body's light-grey background-colour change was to apply a linear-gradient to the `<html>` tag that transitioned into the light-grey at the desired vertical point. The original design however contained a border-radius applied to both bottom corners, so I altered my solution to a negatively positioned `<div>` behind the rest of the content.
 
 ```css
 .grid-container-hero,
@@ -97,7 +97,7 @@ The light-grey body background colour change provided a nice challenge as well, 
 }
 ```
 
-Another great challenge this project provided was the responsive behaviour of the primary grid container, which by default created blank grid-items at certain viewport sizes when applying a `repeat(autofill, ...)`. In order to accommodate for this as best as possible, I decided to add extra empty grid-items whose visibility were toggled at those viewport sizes to create an even looking grid. Once I learn more about design, I would like to experiment more with those empty grid-cells so they don't quite look as naked as they currently do.
+Another great challenge this project provided was the responsive behaviour of the primary grid container, which by default created blank grid-items at certain viewport sizes when applying an `autofill` value to the `repeat()` function. To account for this, I decided to add extra empty grid-items whose visibility would be toggled on at those viewport sizes to create an even looking grid. Once I learn more about design, I would like to experiment more with those empty grid-cells so they don't quite look as naked as they currently do.
 
 ```css
 .grid-item {
