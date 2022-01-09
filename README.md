@@ -109,13 +109,13 @@ Another great challenge this project provided was the responsive behaviour of th
 }
 ```
 
-Finally, to add further interactivity to the project, I decided to use a `transform: scale()`, whilst playing with appropiate transition amounts at the same time. I learnt how not to apply the transition on the pseudo-class, but the base element instead so that it occurs both when the pseudo-class applies and stops applying.
+To add further interactivity to the project, I decided to use a `transform: scale()`, whilst playing with appropiate transition amounts at the same time. I learnt how not to apply the transition on the pseudo-class but the base element instead, so that it occurs both when the pseudo-class applies and stops applying.
 
 ### Continued development
 
-I would like to continue learning about the different ways to create theme toggles accross all languages, but with a greater focus on accessibility.
+I would like to continue learning about the different ways to create theme toggles accross all languages but with a greater focus on accessibility.
 
-Additionally, further practice at creating more responsive grid containers by using an explicitly defined layout at different viewports would be something great to practice as well.
+Further practice at creating more responsive grid containers by using an explicitly defined layout at different viewports would be something great to practice as well.
 
 ### Useful resources
 
